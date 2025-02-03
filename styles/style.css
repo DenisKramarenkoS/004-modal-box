@@ -52,6 +52,7 @@ body {
   background-color: rgba(0, 0, 0, 0.568);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  animation: ani-bg 0.3s;
 }
 
 .modal__wrap_hidden {
@@ -63,9 +64,31 @@ body {
   width: 600px;
   padding: 20px;
   border-radius: 50px;
+  animation: ani-modal-top 0.4s;
 }
 
 .modal__header {
   display: flex;
   justify-content: space-between;
+}
+
+@keyframes ani-modal-top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes ani-bg {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.568);
+  }
 }/*# sourceMappingURL=style.css.map */
