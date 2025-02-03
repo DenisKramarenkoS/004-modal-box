@@ -36,6 +36,11 @@ body {
   background-color: $clr-green;
   color: $clr-text;
   border-radius: 50px;
+  transition: transform 0.2s;
+}
+
+.btn__modal:hover {
+  transform: scale(0.95);
 }
 
 #-btn__cancel {
